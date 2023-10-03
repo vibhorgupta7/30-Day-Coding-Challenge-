@@ -1,3 +1,4 @@
+// Question 1
 public class Solution {
     
     public static int findTriplet(int[] arr, int x) {
@@ -16,4 +17,28 @@ public class Solution {
         return count;
     }
 
+}
+
+
+// Question 2
+
+public class Solution {  
+
+    public static void sortZeroesAndOne(int[] arr) {
+    	//Your code goes here
+        int j =arr.length-1,k=0;
+
+        while(k<j){
+            if(arr[k]==0){
+                k++;
+            } else {
+                if(arr[j]==0){
+                    arr[k]=0;
+                    arr[j]=1;
+                    k++;
+                } 
+                j--;
+            }
+        }
+    }
 }
